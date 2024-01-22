@@ -1,0 +1,67 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* bootstrap class */
+.nav-link{
+    color:#818181;
+}
+.nav-link:hover{
+    color:#ffffff;
+}
+
+.activePage{
+    font-weight: bold !important;
+    color: #FFFFFF !important;
+    }
+span.navbar-toggler-icon{
+    background-color: #818181;
+    border-radius: 5px;
+    &:hover{
+        background-color: #ffffff;
+    }
+}
+/* my class */
+body {
+    background-color: #141414;
+}
+img#imgLogo{
+    width:100px;
+    transform: scale(1.2);
+}
+img.img-fluid:hover{
+    z-index: 10;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 25px 5px #FFFFFF;
+}
+img#profileImg{
+    height:30px;
+    width:30px;
+    object-fit: cover;
+}
+span#ageGroup{
+    color:#818181;
+}
+div.iconOrder span{
+    color:#818181;
+}
+div.iconOrder span:hover{
+    color:#ffffff;
+}
+.textCarosel{
+    opacity: 0;
+}
+/* Classi per mostrare le liste con effetto */
+.defaultList{
+    opacity: 0;
+}
+.showEffect{
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+}
+div#footer{
+    color:#818181;
+    margin-top: 100px;
+    width: 60%;
+}
