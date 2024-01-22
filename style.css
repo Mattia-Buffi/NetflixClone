@@ -65,3 +65,41 @@ div#footer{
     margin-top: 100px;
     width: 60%;
 }
+/* carosello*/
+div.myCaroselRow{
+    color:#FFFFFF;
+    display: flex;
+    align-items: center;
+}
+/* div.myCaroselRow::before{
+    content: '<';
+    width:30px;
+    height:30px;
+    background-color: red;
+    position: absolute;
+    transform: translateX(-40px);
+}
+div.myCaroselRow::after{
+    content: '>';
+    width:30px;
+    height:30px;
+    background-color: red;
+    position: absolute;
+    transform: translateX(calc(100%));
+} */
+div.semiHiddenCard{
+    position:absolute;
+    transform: translateX(100%);
+}
+@keyframes slideCard {
+    from{transform: translateX(0);}
+    to{transform:translateX(-100%);}
+}
+.cardAttive{
+    display:flex;   
+}
+.scorrimento{
+    animation: slideCard 4s linear;
+    animation-fill-mode:forwards;
+    
+}
