@@ -28,3 +28,21 @@ window.addEventListener('scroll',()=>{
         }
     }
   });
+
+  let numeroColonne=5; //
+  let listMovie=document.querySelectorAll('div.myCaroselRow>div');
+  //semi nascondere la settima colonna
+//   listMovie[numeroColonne].classList.add('semiHiddenCard');
+
+//nascondo tutte le imggini in piu
+  for (let index = (numeroColonne+1); index < listMovie.length; index++) {
+    listMovie[index].classList.add('d-none');
+  }
+  console.log(document.querySelectorAll('div.myCaroselRow>div>img')[6].src);
+// addevent sul button
+document.getElementById('nextIcon').addEventListener('click',()=>{
+    console.log('hai click');
+    for (const iterator of listMovie) {
+       iterator.classList.add('scorrimento') 
+    }
+})
